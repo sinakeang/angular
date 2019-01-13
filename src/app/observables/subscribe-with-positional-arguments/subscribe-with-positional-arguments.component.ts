@@ -16,8 +16,11 @@ export class SubscribeWithPositionalArgumentsComponent implements OnInit {
 
     // Execute with positional arguments
     myObservable.subscribe(
+      // next handler is required
       x => console.log('Observer got a next value: ' + x),
+      // error handler is optional
       err => console.error('Observer got an error: ' + err),
+      // complete handler is optional
       () => console.log('Observer got a complete notification')
     );
   }

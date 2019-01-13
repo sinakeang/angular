@@ -16,8 +16,11 @@ export class SubscribeUsingObserverComponent implements OnInit {
 
     // Create observer object
     const myObserver = {
+      // next handler is required
       next: x => console.log('Observer got a next value: ', + x),
+      // error handler is optional
       error: err => console.error('Observer got an error: ' + err),
+      // complete handler is optional
       complete: () => console.log('Observer got a complete notification'),
     };
 
