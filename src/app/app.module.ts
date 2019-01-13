@@ -6,6 +6,7 @@ import { ObserveGeolocationUpdatesComponent } from './observables/observe-geoloc
 import { SubscribeUsingObserverComponent } from './observables/subscribe-using-observer/subscribe-using-observer.component';
 import { SubscribeWithPositionalArgumentsComponent } from './observables/subscribe-with-positional-arguments/subscribe-with-positional-arguments.component';
 import { CreateObservableWithConstructorComponent } from './observables/create-observable-with-constructor/create-observable-with-constructor.component';
+import { CreateObservableFromEventFunctionComponent } from './observables/create-observable-from-event-function/create-observable-from-event-function.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { CreateObservableWithConstructorComponent } from './observables/create-o
     ObserveGeolocationUpdatesComponent,
     SubscribeUsingObserverComponent,
     SubscribeWithPositionalArgumentsComponent,
-    CreateObservableWithConstructorComponent
+    CreateObservableWithConstructorComponent,
+    CreateObservableFromEventFunctionComponent
   ],
   imports: [
     BrowserModule
